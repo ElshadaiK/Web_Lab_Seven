@@ -1,6 +1,7 @@
 // UI Vars 
 const postDiv3 = document.getElementById('thePosts');
-const spinner = document.getElementById('spinner')
+const spinner = document.getElementById('spinner');
+const searcher = document.getElementById('searcher');
 //Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
     //load_fromPlaceHolder();
@@ -9,7 +10,22 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 });
 
-
+searcher.addEventListener('keyup', function(e){
+    searching(e.target.value.toUpperCase())
+})
+// search function
+function searching(filter){
+    items = postDiv3.querySelectorAll('.item')
+    items.forEach(item => {
+        let txtValue = (item.textContent).toUpperCase();
+        if (txtValue.indexOf(filter) > -1) {
+            item.style.display = "flex"
+            
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
 //load a single customer function 
 function load_fromPlaceHolder() {
 
