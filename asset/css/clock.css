@@ -32,7 +32,8 @@
       border-radius: 50%;
       margin: 10px auto;
       position: relative;
-      background: url('https://lh3.googleusercontent.com/proxy/EUhOL8b9LqXVcIv_ySWm4gn8hHKLuJX9eyg4svtON16cnqajGm3cmggY4T0iOmT_HcfJKMTShlWsE6b0QCuBzbFVLro458M') no-repeat;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRW937VNPLJqr9NZqFCG1Lsh5grefIjn9KJQ&usqp=CAU') no-repeat;
+      background-size: cover;
   }
   
   .clock-face {
